@@ -1,0 +1,12 @@
+{{#if mensajes.length}}
+  <h2>Mensajes</h2>
+
+  {{#each mensajes}}
+    <p>
+      <span class="email">{{this.username}} </span>
+      <span class="dateTime">[{{this.dateTime}}]: </span>
+      <span class="text">{{this.mensaje}}</span>
+    </p>
+  {{/each}}
+
+{{/if}}
